@@ -9,21 +9,21 @@
         </div>
         <div class="carousel-inner rounded">
             <div class="carousel-item active" data-bs-interval="10000">
-                <img src="assets/img/bisnis-1.png" class="img-fluid d-block w-100" alt="...">
+                <img src="assets/img/bisnis/bisnis-1.png" class="img-fluid d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Kelas Penumpang Bisnis</h5>
                     <p>Seat Penumpang bangku 2-2 sehingga lebih lebar</p>
                 </div>
             </div>
             <div class="carousel-item" data-bs-interval="2000">
-                <img src="assets/img/ekonomi-1.png" class="d-block w-100" alt="...">
+                <img src="assets/img/ekonomi/ekonomi-1.png" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Kelas Penumpang Ekonomi</h5>
                     <p>Seat penumpang tiga di kanan dan dua di kiri (3-2)</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="assets/img/eksekutif-1.png" class="d-block w-100" alt="...">
+                <img src="assets/img/eksekutif/eksekutif-1.png" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Kelas Penumpang Eksekutif</h5>
                     <p>Model sleeping seat</p>

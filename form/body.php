@@ -112,7 +112,7 @@ $query = mysqli_query($conn, $sql);
                     <div class="col-md-4">
                         <div class="input-group">
                             <div class="input-group-text"><i class="fa-solid fa-person-cane"></i></div>
-                            <input type="text" class="form-control" id="lansia" name="lansia" onkeypress="return hanyaAngka(event)" placeholder="usia > 60 th" value="<?php echo $lansia; ?>"  onkeypress="return hanyaAngka(event)"required>
+                            <input type="text" class="form-control" id="lansia" name="lansia" onkeypress="return hanyaAngka(event)" placeholder="usia > 60 th" value="<?php echo $lansia; ?>" onkeypress="return hanyaAngka(event)" required>
                         </div>
                     </div>
                 </div>
@@ -141,7 +141,7 @@ $query = mysqli_query($conn, $sql);
                     </div>
                 </div>
                 <div class="form-check mb-3 was-validated">
-                    <input class="form-check-input" type="checkbox" id="check" name="check" require_once>
+                    <input class="form-check-input" type="checkbox" id="check" name="check" required>
                     <label class="col-form-check-label" for="check">Saya dan/atau rombongan telah membaca, memahami, dan setuju berdasarkan syarat dan ketentuan yang telah ditetapkan</label>
                 </div>
                 <div class="row">
@@ -149,7 +149,7 @@ $query = mysqli_query($conn, $sql);
                         <button type="submit" name="hitung" id="hitung" class="btn btn-success">Hitung Total Bayar</button>
                     </div>
                     <div class="d-grid gap-2 col-md-4 mx-auto">
-                        <button type="submit" name="pesan" id="pesan" class="btn btn-primary" <?php echo $isCalculated ? "" : "disabled"?>>Pesan Tiket</button>
+                        <button type="submit" name="pesan" id="pesan" class="btn btn-primary" <?php echo $isCalculated ? "" : "disabled" ?>>Pesan Tiket</button>
                     </div>
                     <div class="d-grid gap-2 col-md-4 mx-auto">
                         <button type="submit" name="cancel" id="cancel" class="btn btn-warning">Cancel</button>
@@ -160,10 +160,10 @@ $query = mysqli_query($conn, $sql);
     </div>
 </div>
 <script>
-        function hanyaAngka(event) {
-            var angka = (event.which) ? event.which : event.keyCode
-            if (angka != 46 && angka > 31 && (angka < 48 || angka > 57))
-                return false;
-            return true;
-        }
+    function hanyaAngka(event) {
+        var angka = (event.which) ? event.which : event.keyCode
+        if (angka != 46 && angka > 31 && (angka < 48 || angka > 57))
+            return false;
+        return true;
+    }
 </script>

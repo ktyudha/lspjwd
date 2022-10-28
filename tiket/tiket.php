@@ -10,8 +10,11 @@ function rupiah($angka) {
     return $hasil_rupiah;
 }
 
+$cekKelas = $_SESSION['kelas'];
+$cekNik = $_SESSION['nik'];
 $ceknama = $_SESSION['nama'];
-$sql = "SELECT * FROM bustiket WHERE nama = '$ceknama'";
+
+$sql = "SELECT * FROM bustiket WHERE nama = '$ceknama' and kelas = '$cekKelas' and nik = '$cekNik'";
 $query = mysqli_query($conn, $sql);
 ?>
 

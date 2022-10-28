@@ -85,7 +85,7 @@ if (isset($_POST['cektiket'])) {
     $nik = $_POST['nik'];
     $kelas = $_POST['kelas'];
 
-    $sql = "SELECT * FROM bustiket WHERE nama = '$nama' and nik = '$nik'";
+    $sql = "SELECT * FROM bustiket WHERE nama = '$nama' and nik = '$nik' and  kelas = '$kelas'";
     $query = mysqli_query($conn, $sql);
     $cek = mysqli_num_rows($query);
 
